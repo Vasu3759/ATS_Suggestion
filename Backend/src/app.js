@@ -7,7 +7,9 @@ const app = express()
 app.use(express.json())
 app.use(cookieParser())
 app.use(cors({
-    origin: "https://ats-suggestion.vercel.app",
+    origin:[ "https://ats-suggestion.vercel.app",
+    "https://ats-suggestion-hms8xg2st-vasu3759s-projects.vercel.app"
+    ],
     credentials: true
 }))
 
